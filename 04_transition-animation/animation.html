@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main
+      class="container min-h-screen flex flex-col items-center justify-center gap-y-4 p-10"
+    >
+      <button
+        type="button"
+        class="bg-indigo-500 text-white text-3xl p-5 flex items-center gap-x-3 rounded"
+        disabled
+      >
+        <i class="fa-solid fa-spinner animate-spin"></i>
+        Processing...
+      </button>
+
+      <span class="h-12 w-12 bg-sky-500 rounded-full animate-ping"></span>
+
+      <div class="bg-gray-300 rounded-lg h-10 w-full animate-pulse"></div>
+
+      <span class="h-12 w-12 bg-sky-500 rounded-full animate-bounce"></span>
+    </main>
+  </body>
+</html>
