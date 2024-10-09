@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Mode Basic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Tailwind 설정에서 다크 모드를 selector로 설정
+      tailwind.config = {
+        // darkMode: 'media', // 운영 체제의 모드에 맞게 설정
+        darkMode: 'selector', // 수동으로 설정
+      };
+    </script>
+  </head>
+  <body class="dark">
+    <main class="min-h-screen flex items-center justify-center">
+      <div
+        class="bg-white dark:bg-slate-800 text-slate-900 dark:text-white p-6 rounded-lg shadow-md max-w-lg"
+      >
+        <h3 class="text-lg font-bold">Writes Upside-Down</h3>
+        <p class="text-slate-600 dark:text-slate-400">
+          The Zero Gravity Pen can be used to write in any orientation,
+          including upside-down. It even works in outer space.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
